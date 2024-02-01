@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Video Stream</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .video-container {
+            margin: 20px auto;
+            width: 640px; /* Adjust the width as needed */
+            background-color: #333;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <h1>Live Video Stream</h1>
+        <!-- The image source is set to the video feed endpoint of your C++ server -->
+        <img src="http://localhost:8080/video_feed" alt="Video Stream" />
+    </div>
+</body>
+</html>
